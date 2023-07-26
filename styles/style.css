@@ -3,3 +3,40 @@
 body{
     background-color: white;
 }
+
+
+.overlay{
+ position: relative;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 1537px;
+    height: 640px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.teams{
+    background-image:url("../images/banner1.png");
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.teams::before{
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.color{
+     color:white
+}
