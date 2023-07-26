@@ -10,29 +10,92 @@
     <title>Fruit Burst</title>
 </head>
 <body>
-    <header class="mt-8">
+    <header>
         <nav>
-            <div class="navbar bg-pink-700 container h-[80px] mx-auto mt-4 rounded-full mb-4">
+            <div class="navbar sm:w-auto bg-pink-700 container h-[80px] mx-auto rounded-full mb-4">
                 <div class="navbar-start">
                   <div>
-                    <ul  class="flex p-2 gap-12">
-                      <li class="ml-4"><a>Homepage</a></li>
+                    <ul  class="flex md:p-1 md:gap-8 lg:p-2 md:flex-1 gap-12">
+                      <li class=" md:ml-1 lg:ml-4"><a>Homepage</a></li>
                       <li><a>Portfolio</a></li>
                       <li><a>About</a></li>
                       <li class="whitespace-nowrap"><a>All Fruits</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="navbar-center flex-end">
+                <div class="navbar-center md:flex-1 lg:flex-end ">
                     <i class="fa-solid fa-pepper-hot fa-2xl mr-2"></i>
-                  <a class=" normal-case text-xl">daisyUI</a>
+                  <a class=" normal-case text-xl">Fruit Burst</a>
                 </div>
-                <div class="navbar-end">
+                <div class="md:flex-1 lg:navbar-end">
                   <div>
-                    <input style="background-color:white" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto mr-8" />
+                    <input style="background-color:white" type="text" placeholder="Search" class="input input-bordered w-24 sm:mr-0 md:w-auto mr-8" />
                   </div>
                 </div>
               </div>
+             
+                <div class="carousel container relative sm:mx-0 lg:mx-48 border-2 border-red-700 -mt:32">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="/images/banner1.png " class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img src="/images/banner2.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="/images/banner3.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img src="/images/banner4.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                   
+                    </div>
+                    <div class="absolute">
+                        <h1 class="text-extrabold sm:text-5xl lg:text-7xl text-white-700 md:whitespace-nowrap md:mt-[-290px] md:ml-32 lg:mt-[-590px] lg:ml-[680px]">
+                            Exotic tasts at your
+                            <p class="text-center">doorstep</p>
+                            <p class="text-sm text-center text-white mb-4">We supply highly quality organic products</p>
+                            <p class="flex justify-center text-center" ><button class="btn text-white "style="background-color:#F85559;border:none;">Shop Now</button></p>
+                       </h1>
+                    </div>
+                    <div class="w-[1196px] h-[250px] bg-red-100 drop-shadow-2xl rounded-md relative -top-[125px] mx-auto lg:grid grid-cols-5">
+                        <div class=" lg:flex lg:flex-col justify-center items-center"> 
+                            <img src="./images/fruit1.png" alt="grape" >
+                            <p class="text-black">Grape</p>
+                        </div>
+                        <div class=" lg:flex lg:flex-col justify-center items-center">   
+                            <img src="./images/fruit2.png"alt="" >
+                            <p class="text-black">Orange</p>
+                        </div>
+                        <div  class=" lg:flex lg:flex-col justify-center items-center">
+                            <img src="./images/fruit3.png" alt="">
+                            <p class="text-black">Mango</p>
+                        </div>
+                        <div  class=" lg:flex lg:flex-col justify-center items-center">
+                            <img src="./images/fruit4.png" alt="">
+                            <p class="text-black">Strawbery</p>
+                        </div>
+                        <div  class=" lg:flex lg:flex-col justify-center items-center">
+                            <img src="./images/fruit5.png" alt="">
+                            <p class="text-black">Ananas</p>
+                        </div>
+                    </div>
+                </div>
         </nav>
     </header>
     <main>
@@ -41,6 +104,6 @@
     <footer>
 
     </footer>
-<script src="https://cdn.tailwindcss.com"></script>   
+  
 </body>
 </html>
